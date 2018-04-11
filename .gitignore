@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs
+/PrismaWEB.Application/bin/Debug
+/PrismaWEB.Application/obj/Debug
+/PrismaWEB.Domain/bin/Debug
+/PrismaWEB.Domain/obj/Debug
+/PrismaWEB.Infra.Data/bin/Debug
+/PrismaWEB.Infra.Data/obj/Debug
+/PrismaWEB.MVC/bin
+/PrismaWEB.MVC/obj/Debug
