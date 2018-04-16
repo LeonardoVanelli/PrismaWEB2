@@ -30,8 +30,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Entities\Bairro.cs" />
+    <Compile Include="Entities\Candidatocargos.cs" />
+    <Compile Include="Entities\Cargo.cs" />
+    <Compile Include="Entities\Cidade.cs" />
     <Compile Include="Entities\Cliente.cs" />
+    <Compile Include="Entities\Estado.cs" />
+    <Compile Include="Entities\Favorito.cs" />
+    <Compile Include="Entities\Lei.cs" />
+    <Compile Include="Entities\Logradouro.cs" />
+    <Compile Include="Entities\Pais.cs" />
+    <Compile Include="Entities\Pessoa.cs" />
+    <Compile Include="Entities\Presidente.cs" />
     <Compile Include="Entities\Produto.cs" />
+    <Compile Include="Entities\Votocandidatoleis.cs" />
+    <Compile Include="Entities\Voto.cs" />
     <Compile Include="Interfaces\Repositories\IClienteRepository.cs" />
     <Compile Include="Interfaces\Repositories\IProdutoRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
@@ -43,9 +56,19 @@
     <Compile Include="Services\ProdutoService.cs" />
     <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
