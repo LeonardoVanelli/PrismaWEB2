@@ -48,11 +48,20 @@
   <ItemGroup>
     <Compile Include="Contexto\ProjetoModeloContext.cs" />
     <Compile Include="EntityConfig\ClienteConfiguration.cs" />
+    <Compile Include="EntityConfig\LeiConfiguration.cs" />
     <Compile Include="EntityConfig\PaisConfiguration.cs" />
+    <Compile Include="EntityConfig\PessoaConfiguration.cs" />
+    <Compile Include="EntityConfig\PresidenteConfiguration.cs" />
     <Compile Include="EntityConfig\ProdutoConfiguration.cs" />
+    <Compile Include="EntityConfig\VotoCandidatoLeisConfiguration.cs" />
+    <Compile Include="EntityConfig\VotoConfiguration.cs" />
     <Compile Include="Migrations\201804141500130_Pais.cs" />
     <Compile Include="Migrations\201804141500130_Pais.Designer.cs">
       <DependentUpon>201804141500130_Pais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804172107237_Pais1.cs" />
+    <Compile Include="Migrations\201804172107237_Pais1.Designer.cs">
+      <DependentUpon>201804172107237_Pais1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +82,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804141500130_Pais.resx">
       <DependentUpon>201804141500130_Pais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804172107237_Pais1.resx">
+      <DependentUpon>201804172107237_Pais1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

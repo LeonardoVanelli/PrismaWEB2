@@ -9,17 +9,12 @@ namespace ProjetoModeloDDD.Domain.Entities
     public partial class Presidente
     {
         public int Id { get; set; }
-
         public int Candidato_Id { get; set; }
-
         public int Vice_Id { get; set; }
-
         public DateTime DataCriacao { get; set; }
+        public DateTime DataAlteracao { get; set; }
 
-        public DateTime? DataAlteracao { get; set; }
-
-        public virtual Pessoa Pessoas { get; set; }
-
-        public virtual Pessoa Pessoas1 { get; set; }
+        public virtual Pessoa Candidato { get; set; }
+        public virtual Pessoa Vice { get; set; }
     }
 }

@@ -9,17 +9,12 @@ namespace ProjetoModeloDDD.Domain.Entities
     public partial class Votocandidatoleis
     {
         public int Id { get; set; }
-
         public int Candidato_Id { get; set; }
-
         public int Lei_Id { get; set; }
-
         public bool Votou { get; set; }
-
         public DateTime DataCriacao { get; set; }
 
-        public virtual Lei Leis { get; set; }
-
-        public virtual Pessoa Pessoas { get; set; }
+        public virtual Lei Lei { get; set; }
+        public virtual Pessoa Candidato { get; set; }
     }
 }
