@@ -72,14 +72,19 @@ namespace ProjetoModeloDDD.MVC.App_Start
             kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
             kernel.Bind<IClienteAppService>().To<ClienteAppService>();
             kernel.Bind<IProdutoAppService>().To<ProdutoAppService>();
+            kernel.Bind<IPaisAppService>().To<PaisAppService>();
+            kernel.Bind<IPessoaAppService>().To<PessoaAppService>();
 
             kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
             kernel.Bind<IClienteService>().To<ClienteService>();
             kernel.Bind<IProdutoService>().To<ProdutoService>();
+            kernel.Bind<IPessoaService>().To<PessoaService>();
 
             kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
             kernel.Bind<IClienteRepository>().To<ClienteRepository>();
             kernel.Bind<IProdutoRepository>().To<ProdutoRepository>();
+            kernel.Bind<IPaisRepository>().To<PaisRepository>();
+            kernel.Bind<IPessoaRepository>().To<PessoaRepository>();
         }        
     }
 }

@@ -1,5 +1,5 @@
-﻿using ProjetoModeloDDD.Domain.Entities;
 using System.Data.Entity.ModelConfiguration;
+using ProjetoModeloDDD.Domain.Entities;
 
 namespace ProjetoModeloDDD.Infra.Data.EntityConfig
 {
@@ -7,15 +7,8 @@ namespace ProjetoModeloDDD.Infra.Data.EntityConfig
     {
         public PaisConfiguration()
         {
-            HasKey(p => p.Id);
-
-            Property(p => p.Nome)
-                .IsRequired()
-                .HasMaxLength(60);
-
-            Property(p => p.Sigla)
-                .IsRequired()
-                .HasMaxLength(3);
+            HasKey(x => x.Id);
         }
     }
 }
+

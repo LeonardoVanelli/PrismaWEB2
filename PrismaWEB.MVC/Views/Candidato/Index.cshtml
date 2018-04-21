@@ -1,0 +1,123 @@
+﻿@model IEnumerable<ProjetoModeloDDD.MVC.ViewModels.CandidatoViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataNascimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cpf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Foto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ativo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefoneFixo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefoneMovel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pais_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estado_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cidade_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bairro_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Logradouro_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Numero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Complemento)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataNascimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cpf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Foto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ativo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefoneFixo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefoneMovel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pais_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cidade_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bairro_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Logradouro_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cep)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Numero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Complemento)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

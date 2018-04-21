@@ -43,7 +43,11 @@
     <Compile Include="ClienteAppService.cs" />
     <Compile Include="Interface\IAppServiceBase.cs" />
     <Compile Include="Interface\IClienteAppService.cs" />
+    <Compile Include="Interface\IPaisAppService.cs" />
+    <Compile Include="Interface\IPessoaAppService.cs" />
     <Compile Include="Interface\IProdutoAppService.cs" />
+    <Compile Include="PaisAppService.cs" />
+    <Compile Include="PessoaAppService.cs" />
     <Compile Include="ProdutoAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

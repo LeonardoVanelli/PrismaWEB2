@@ -1,21 +1,20 @@
 namespace ProjetoModeloDDD.Domain.Entities
 {
     using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     public class Pessoa
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public DateTime DataNascimento { get; set; }    
+        public DateTime DataNascimento { get; set; }
+        [Index(IsUnique = true)]
         public string Cpf { get; set; }
         public string Foto { get; set; }
         public DateTime DataCriacao { get; set; }
-        public DateTime DataAlteracao { get; set; }
+        public DateTime? DataAlteracao { get; set; }
         public bool Ativo { get; set; }
+        [Index(IsUnique = true)]
         public string Email { get; set; }
         public string TelefoneFixo { get; set; }
         public string TelefoneMovel { get; set; }
