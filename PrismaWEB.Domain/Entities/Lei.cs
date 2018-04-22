@@ -6,7 +6,7 @@ namespace ProjetoModeloDDD.Domain.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Lei
+    public class Lei
     {
         public int Id { get; set; }
         public string Numero { get; set; }

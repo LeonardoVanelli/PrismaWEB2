@@ -6,7 +6,7 @@ namespace ProjetoModeloDDD.Domain.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Presidente
+    public class Presidente
     {
         public int Id { get; set; }
         public int Candidato_Id { get; set; }

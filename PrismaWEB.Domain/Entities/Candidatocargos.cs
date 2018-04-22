@@ -6,7 +6,7 @@ namespace ProjetoModeloDDD.Domain.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Candidatocargos
+    public class Candidatocargos
     {
         public int Id { get; set; }
 

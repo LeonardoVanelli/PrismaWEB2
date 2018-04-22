@@ -38,6 +38,7 @@
     <Compile Include="Entities\Estado.cs" />
     <Compile Include="Entities\Favorito.cs" />
     <Compile Include="Entities\Lei.cs" />
+    <Compile Include="Entities\Leiss.cs" />
     <Compile Include="Entities\Logradouro.cs" />
     <Compile Include="Entities\Pais.cs" />
     <Compile Include="Entities\Pessoa.cs" />

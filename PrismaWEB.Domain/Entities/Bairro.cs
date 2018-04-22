@@ -6,37 +6,20 @@ namespace ProjetoModeloDDD.Domain.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class Bairro
-    {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Bairro()
-        {
-            Logradouros = new HashSet<Logradouro>();
-            Pessoas = new HashSet<Pessoa>();
-        }
-
+    public class Bairro
+    {    
         public int Id { get; set; }
 
         [Required]
-        [StringLength(120)]
+        [StringLength(120,MinimumLength=4)]
         public string Nome { get; set; }
-
         public int Cidade { get; set; }
-
+        [RegularExpression(@"^[a-zA-Z''-'\s]{1,40}$")]
         public int Estado { get; set; }
-
-        public int Pais { get; set; }
-
+        [Display(Name = "Data do pedido")]
+        public int Pais { get; set; }        
         public virtual Cidade Cidades { get; set; }
-
         public virtual Estado Estados { get; set; }
-
         public virtual Pais Paises { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Logradouro> Logradouros { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pessoa> Pessoas { get; set; }
     }
 }

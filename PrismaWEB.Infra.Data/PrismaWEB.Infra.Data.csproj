@@ -55,25 +55,9 @@
     <Compile Include="EntityConfig\ProdutoConfiguration.cs" />
     <Compile Include="EntityConfig\VotoCandidatoLeisConfiguration.cs" />
     <Compile Include="EntityConfig\VotoConfiguration.cs" />
-    <Compile Include="Migrations\201804141500130_Pais.cs" />
-    <Compile Include="Migrations\201804141500130_Pais.Designer.cs">
-      <DependentUpon>201804141500130_Pais.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804172107237_Pais1.cs" />
-    <Compile Include="Migrations\201804172107237_Pais1.Designer.cs">
-      <DependentUpon>201804172107237_Pais1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804172134024_Cliente.cs" />
-    <Compile Include="Migrations\201804172134024_Cliente.Designer.cs">
-      <DependentUpon>201804172134024_Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804180125235_Pessoa.cs" />
-    <Compile Include="Migrations\201804180125235_Pessoa.Designer.cs">
-      <DependentUpon>201804180125235_Pessoa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804182211471_Pais2.cs" />
-    <Compile Include="Migrations\201804182211471_Pais2.Designer.cs">
-      <DependentUpon>201804182211471_Pais2.cs</DependentUpon>
+    <Compile Include="Migrations\201804211239048_Inicial.cs" />
+    <Compile Include="Migrations\201804211239048_Inicial.Designer.cs">
+      <DependentUpon>201804211239048_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,20 +78,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804141500130_Pais.resx">
-      <DependentUpon>201804141500130_Pais.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804172107237_Pais1.resx">
-      <DependentUpon>201804172107237_Pais1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804172134024_Cliente.resx">
-      <DependentUpon>201804172134024_Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804180125235_Pessoa.resx">
-      <DependentUpon>201804180125235_Pessoa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804182211471_Pais2.resx">
-      <DependentUpon>201804182211471_Pais2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804211239048_Inicial.resx">
+      <DependentUpon>201804211239048_Inicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

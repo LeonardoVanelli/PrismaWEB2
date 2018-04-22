@@ -29,10 +29,15 @@ namespace ProjetoModeloDDD.Domain.Entities
         public string Complemento { get; set; }
         public int Tipo { get; set; }
 
+        [ForeignKey("Bairro_Id")]
         public virtual Bairro Bairro { get; set; }      
+        [ForeignKey("Cidade_Id")]
         public virtual Cidade Cidade { get; set; }
+        [ForeignKey("Estado_Id")]
         public virtual Estado Estado { get; set; }
+        [ForeignKey("Logradouro_Id")]
         public virtual Logradouro Logradouro { get; set; }
+        [ForeignKey("Pais_Id")]
         public virtual Pais Pais { get; set; }
     }
 }
