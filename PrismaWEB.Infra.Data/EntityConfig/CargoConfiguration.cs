@@ -3,9 +3,9 @@ using ProjetoModeloDDD.Domain.Entities;
 
 namespace ProjetoModeloDDD.Infra.Data.EntityConfig
 {
-    public class PresidenteConfiguration : EntityTypeConfiguration<Presidente>
+    public class CargoConfiguration : EntityTypeConfiguration<Cargo>
     {
-        public PresidenteConfiguration()
+        public CargoConfiguration()
         {
             HasKey(x => x.Id);
         }

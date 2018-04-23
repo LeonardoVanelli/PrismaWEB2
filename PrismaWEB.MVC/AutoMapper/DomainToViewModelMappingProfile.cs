@@ -18,6 +18,8 @@ namespace ProjetoModeloDDD.MVC.AutoMapper
             Mapper.CreateMap<ProdutoViewModel, Produto>();
             Mapper.CreateMap<PaisViewModel, Pais>();
             Mapper.CreateMap<CandidatoViewModel, Pessoa>();
+            Mapper.CreateMap<PresidenteViewModel, Presidente>();
+            Mapper.CreateMap<CargoViewModel, Cargo>();
         }
     }
 }

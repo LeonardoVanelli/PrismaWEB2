@@ -19,8 +19,7 @@ namespace ProjetoModeloDDD.Infra.Data.Contexto
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Pais>    Paises   { get; set; }
         public DbSet<Pessoa>  Pessoas  { get; set; }
-
-
+        public DbSet<Cargo>   Cargos   { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

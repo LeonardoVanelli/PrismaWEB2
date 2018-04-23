@@ -12,6 +12,7 @@ namespace ProjetoModeloDDD.Domain.Entities
 
         [Required]
         [StringLength(60)]
+        [Index(IsUnique = true)]
         public string Nome { get; set; }
         [Required]
         [StringLength(420)]
