@@ -20,6 +20,7 @@ namespace ProjetoModeloDDD.Infra.Data.Contexto
         public DbSet<Pais>    Paises   { get; set; }
         public DbSet<Pessoa>  Pessoas  { get; set; }
         public DbSet<Cargo>   Cargos   { get; set; }
+        public DbSet<Lei>     Leis     { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -47,18 +47,18 @@ namespace ProjetoModeloDDD.MVC.App_Start
         /// <returns>The created kernel.</returns>
         private static IKernel CreateKernel()
         {
-            var kernel = new StandardKernel();
+            var kernell = new StandardKernel();
             try
             {
-                kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
-                kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+                kernell.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
+                kernell.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
-                RegisterServices(kernel);
-                return kernel;
+                RegisterServices(kernell);
+                return kernell;
             }
             catch
             {
-                kernel.Dispose();
+                kernell.Dispose();
                 throw;
             }
         }
@@ -76,12 +76,15 @@ namespace ProjetoModeloDDD.MVC.App_Start
             kernel.Bind<IPessoaAppService>().To<PessoaAppService>();
             kernel.Bind<ICargoAppService>().To<CargoAppService>();
             kernel.Bind<IPresidenteAppService>().To<PresidenteAppService>();
+            kernel.Bind<ILeiAppService>().To<LeiAppService>();
 
             kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
             kernel.Bind<IClienteService>().To<ClienteService>();
             kernel.Bind<IProdutoService>().To<ProdutoService>();
             kernel.Bind<IPessoaService>().To<PessoaService>();
             kernel.Bind<IPresidenteService>().To<PresidenteService>();
+            kernel.Bind<ICargoService>().To<CargoService>();
+            kernel.Bind<ILeiService>().To<LeiService>();
 
             kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
             kernel.Bind<IClienteRepository>().To<ClienteRepository>();
@@ -89,6 +92,14 @@ namespace ProjetoModeloDDD.MVC.App_Start
             kernel.Bind<IPaisRepository>().To<PaisRepository>();
             kernel.Bind<IPessoaRepository>().To<PessoaRepository>();
             kernel.Bind<IPresidenteRepository>().To<PresidenteRepository>();
-        }        
+            kernel.Bind<ICargoRepository>().To<CargoRepository>();
+            kernel.Bind<ILeiRepository>().To<LeiRepository>();
+        }
     }
 }
+
+
+
+
+
+

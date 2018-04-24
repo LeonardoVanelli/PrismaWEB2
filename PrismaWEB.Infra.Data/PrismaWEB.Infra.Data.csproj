@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\ProjetoModeloContext.cs" />
+    <Compile Include="Customise\CustomBase.cs" />
     <Compile Include="EntityConfig\CargoConfiguration.cs" />
     <Compile Include="EntityConfig\ClienteConfiguration.cs" />
     <Compile Include="EntityConfig\LeiConfiguration.cs" />
@@ -60,19 +61,21 @@
     <Compile Include="Migrations\201804211239048_Inicial.Designer.cs">
       <DependentUpon>201804211239048_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804232322369_Cargo.cs" />
-    <Compile Include="Migrations\201804232322369_Cargo.Designer.cs">
-      <DependentUpon>201804232322369_Cargo.cs</DependentUpon>
+    <Compile Include="Migrations\201804242320401_Lei.cs" />
+    <Compile Include="Migrations\201804242320401_Lei.Designer.cs">
+      <DependentUpon>201804242320401_Lei.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CargoRepository.cs" />
     <Compile Include="Repositories\ClienteRepository.cs" />
+    <Compile Include="Repositories\LeiRepository.cs" />
     <Compile Include="Repositories\PaisRepository.cs" />
     <Compile Include="Repositories\PessoaRepository.cs" />
     <Compile Include="Repositories\PresidenteRepository.cs" />
     <Compile Include="Repositories\ProdutoRepository.cs" />
     <Compile Include="Repositories\RespositoryBase.cs" />
+    <Compile Include="Repositories\TEntity.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrismaWEB.Domain\PrismaWEB.Domain.csproj">
@@ -88,8 +91,8 @@
     <EmbeddedResource Include="Migrations\201804211239048_Inicial.resx">
       <DependentUpon>201804211239048_Inicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804232322369_Cargo.resx">
-      <DependentUpon>201804232322369_Cargo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804242320401_Lei.resx">
+      <DependentUpon>201804242320401_Lei.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

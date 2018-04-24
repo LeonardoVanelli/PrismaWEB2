@@ -1,4 +1,4 @@
-﻿
+
 using AutoMapper;
 using ProjetoModeloDDD.Domain.Entities;
 using ProjetoModeloDDD.MVC.ViewModels;
@@ -20,6 +20,11 @@ namespace ProjetoModeloDDD.MVC.AutoMapper
             Mapper.CreateMap<CandidatoViewModel, Pessoa>();
             Mapper.CreateMap<PresidenteViewModel, Presidente>();
             Mapper.CreateMap<CargoViewModel, Cargo>();
+            Mapper.CreateMap<LeiViewModel, Lei>();
         }
     }
 }
+
+
+
+
