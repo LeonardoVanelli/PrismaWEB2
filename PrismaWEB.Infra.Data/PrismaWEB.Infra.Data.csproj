@@ -61,10 +61,6 @@
     <Compile Include="Migrations\201804211239048_Inicial.Designer.cs">
       <DependentUpon>201804211239048_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804242320401_Lei.cs" />
-    <Compile Include="Migrations\201804242320401_Lei.Designer.cs">
-      <DependentUpon>201804242320401_Lei.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CargoRepository.cs" />
@@ -90,9 +86,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804211239048_Inicial.resx">
       <DependentUpon>201804211239048_Inicial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804242320401_Lei.resx">
-      <DependentUpon>201804242320401_Lei.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
