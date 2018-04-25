@@ -80,10 +80,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\201804211239048_Inicial.resx">
       <DependentUpon>201804211239048_Inicial.cs</DependentUpon>
     </EmbeddedResource>
