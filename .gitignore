@@ -13,3 +13,5 @@
 /PrismaWEB.MVC/obj/Debug
 /PrismaWEB.Infra.Data/PrismaWEB.Infra.Data.csproj.user
 /PrismaWEB.Domain/PrismaWEB.Domain.csproj.user
+/PrismaWEB.Application/PrismaWEB.Application.csproj.user
+/PrismaWEB.MVC/PrismaWEB.MVC.csproj.user
