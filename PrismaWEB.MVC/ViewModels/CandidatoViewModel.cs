@@ -1,3 +1,5 @@
+
+using ProjetoModeloDDD.Domain.Attribute;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,8 +17,9 @@ namespace ProjetoModeloDDD.MVC.ViewModels
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "dd/mm/yyyy")]
         public DateTime DataNascimento { get; set; }
-        [Required]
-        [StringLength(11, MinimumLength = 11)]
+        [Required]       
+        [Cpf]
+        [Display(Name = "CPF")]
         public string Cpf { get; set; }
         public string Foto { get; set; }
         [Required]
