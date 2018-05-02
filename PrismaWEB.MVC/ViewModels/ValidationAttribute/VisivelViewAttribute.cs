@@ -9,6 +9,11 @@ namespace ProjetoModeloDDD.Domain.Attribute
 {
     class VisivelViewAttribute : ValidationAttribute
     {
-        public string Campos { get; set; }   
+        public string Campos { get; set; }
+
+        public override bool IsValid(object value)
+        {
+            return true;
+        }
     }    
 }

@@ -155,6 +155,8 @@
     <Compile Include="ViewModels\PresidenteViewModel.cs" />
     <Compile Include="ViewModels\ProdutoViewModel.cs" />
     <Compile Include="ViewModels\ValidationAttribute\CpfAttribute.cs" />
+    <Compile Include="ViewModels\ValidationAttribute\ForeignKeyViewAttribute.cs" />
+    <Compile Include="ViewModels\ValidationAttribute\VisivelViewAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
