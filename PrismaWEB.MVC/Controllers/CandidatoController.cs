@@ -35,6 +35,11 @@ namespace ProjetoModeloDDD.MVC.Controllers
         // GET: Pessoas/Create
         public ActionResult Create()
         {
+            ViewBag.Pais_Id = null;
+            ViewBag.Estado_Id = null;
+            ViewBag.Cidade_Id = null;
+            ViewBag.Bairro_Id = null;
+            ViewBag.Logradouro_Id = null;
             return View();
         }
 
