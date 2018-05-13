@@ -13,33 +13,46 @@
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Numero)
-        </th>
+        <th>
         <th>
             @Html.DisplayNameFor(model => model.Nome)
-        </th>
+        <th>
         <th>
             @Html.DisplayNameFor(model => model.Descricao)
-        </th>
+        <th>
+        <th>
+            @Html.DisplayNameFor(model => model.Autor_Id)
+        <th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkPdf)
+        <th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Numero)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Descricao)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Numero)
+            <td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            <td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            <td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autor.Nome)
+            <td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkPdf)
+            <td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
 
 </table>

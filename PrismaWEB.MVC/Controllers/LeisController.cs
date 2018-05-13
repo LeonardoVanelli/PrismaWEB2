@@ -10,10 +10,12 @@ namespace ProjetoModeloDDD.MVC.Controllers
     public class LeisController : Controller
     {
         private readonly ILeiAppService _leiApp;
+        private readonly IPessoaAppService _pessoaApp;
 
-        public LeisController(ILeiAppService leiApp)
+        public LeisController(ILeiAppService leiApp, IPessoaAppService pessoaApp)
         {
             _leiApp = leiApp;
+            _pessoaApp = pessoaApp;
         }
 
         // GET: Leis
@@ -34,6 +36,7 @@ namespace ProjetoModeloDDD.MVC.Controllers
         // GET: Leis/Create
         public ActionResult Create()
         {
+            ViewBag.Autor_Id = new SelectList(_pessoaApp.GetAll(), "Id", "Nome");
             return View();
         }
 
@@ -100,4 +103,3 @@ namespace ProjetoModeloDDD.MVC.Controllers
         }
     }
 }
-

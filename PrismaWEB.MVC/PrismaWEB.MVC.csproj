@@ -214,6 +214,7 @@
     <Content Include="Views\Candidato\Create.cshtml" />
     <Content Include="Views\Cargos\Create.cshtml" />
     <Content Include="Views\Leis\Index.cshtml" />
+    <Content Include="Views\Leis\Edit.cshtml" />
     <Content Include="Views\Leis\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
