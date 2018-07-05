@@ -15,8 +15,10 @@ namespace ProjetoModeloDDD.Infra.Data.Repositories
 
         public void Add(TEntity obj)
         {
+            BeforeInsert(obj);
             Db.Set<TEntity>().Add(obj);
             Db.SaveChanges();
+            AfterInsert(obj);
         }
 
         public TEntity GetById(int id)
@@ -44,6 +46,16 @@ namespace ProjetoModeloDDD.Infra.Data.Repositories
         public void Dispose()
         {
             throw new NotImplementedException();
+        }
+
+        public virtual void AfterInsert(TEntity obj)
+        {
+
+        }
+
+        public virtual void BeforeInsert(TEntity obj)
+        {
+
         }
     }
 }

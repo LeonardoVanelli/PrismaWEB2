@@ -11,3 +11,14 @@
 /PrismaWEB.Infra.Data/obj/Debug
 /PrismaWEB.MVC/bin
 /PrismaWEB.MVC/obj/Debug
+/PrismaWEB.Infra.Data/PrismaWEB.Infra.Data.csproj.user
+/PrismaWEB.Domain/PrismaWEB.Domain.csproj.user
+/PrismaWEB.Application/PrismaWEB.Application.csproj.user
+/PrismaWEB.MVC/PrismaWEB.MVC.csproj.user
+/PrismaWEB.Infra.Data/obj/Release
+/PrismaWEB.Infra.Data/bin/Release
+/PrismaWEB.MVC/obj/Release
+/PrismaWEB.Domain/bin/Release
+/PrismaWEB.Domain/obj/Release
+/PrismaWEB.Application/obj/Release
+/PrismaWEB.Application/bin/Release

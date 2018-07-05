@@ -10,7 +10,7 @@ namespace ProjetoModeloDDD.Domain.Entities
         public string Sobrenome { get; set; }
         public string Email { get; set; }
         public DateTime DataCriacao { get; set; }
-        public DateTime DataAlteracao { get; set; }
+        public DateTime? DataAlteracao { get; set; }
         public bool Ativo { get; set; }
         public virtual IEnumerable<Produto> Produtos { get; set; }
 

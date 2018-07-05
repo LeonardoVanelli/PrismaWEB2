@@ -1,33 +1,38 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace ProjetoModeloDDD.Domain.Entities
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
-    public partial class Lei
+    [Table("Leis")]
+    public class Lei
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Lei()
-        {
-            Votocandidatoleis = new HashSet<Votocandidatoleis>();
-        }
-
         public int Id { get; set; }
 
-        [Required]
-        [StringLength(15)]
+        [MaxLength(20)]
+        [Required]        
         public string Numero { get; set; }
 
+        [MaxLength(120)]
         [Required]
-        [StringLength(60)]
         public string Nome { get; set; }
 
         [Required]
+        [MaxLength(450)]
         public string Descricao { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Votocandidatoleis> Votocandidatoleis { get; set; }
+        [Display(Name = "Autor")]
+        public int Autor_Id { get; set; }
+
+        [Required]
+        [MaxLength(400)]
+        public string LinkPdf { get; set; }
+
+        [Required]
+        public DateTime DataCriacao { get; set; }
+        public DateTime? DataAlteracao { get; set; }
+
+        [ForeignKey("Autor_Id")]
+        public virtual Pessoa Autor { get; set; }
     }
 }

@@ -135,15 +135,28 @@
     <Compile Include="AutoMapper\AutoMapperConfig.cs" />
     <Compile Include="AutoMapper\DomainToViewModelMappingProfile.cs" />
     <Compile Include="AutoMapper\ViewModelToDomainMappingProfile.cs" />
+    <Compile Include="Controllers\CargosController.cs" />
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LeisController.cs" />
+    <Compile Include="Controllers\PaisController.cs" />
+    <Compile Include="Controllers\CandidatoController.cs" />
+    <Compile Include="Controllers\PresidentesController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CargoViewModel.cs" />
     <Compile Include="ViewModels\ClienteViewModel.cs" />
+    <Compile Include="ViewModels\LeiViewModel.cs" />
+    <Compile Include="ViewModels\PaisViewModel.cs" />
+    <Compile Include="ViewModels\CandidatoViewModel.cs" />
+    <Compile Include="ViewModels\PresidenteViewModel.cs" />
     <Compile Include="ViewModels\ProdutoViewModel.cs" />
+    <Compile Include="ViewModels\ValidationAttribute\CpfAttribute.cs" />
+    <Compile Include="ViewModels\ValidationAttribute\ForeignKeyViewAttribute.cs" />
+    <Compile Include="ViewModels\ValidationAttribute\VisivelViewAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -166,6 +179,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Cargos\Index.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -194,6 +208,14 @@
     <Content Include="Views\Produtos\Details.cshtml" />
     <Content Include="Views\Produtos\Edit.cshtml" />
     <Content Include="Views\Produtos\Delete.cshtml" />
+    <Content Include="Views\Pais\Index.cshtml" />
+    <Content Include="Views\Pais\Create.cshtml" />
+    <Content Include="Views\Candidato\Index.cshtml" />
+    <Content Include="Views\Candidato\Create.cshtml" />
+    <Content Include="Views\Cargos\Create.cshtml" />
+    <Content Include="Views\Leis\Index.cshtml" />
+    <Content Include="Views\Leis\Edit.cshtml" />
+    <Content Include="Views\Leis\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

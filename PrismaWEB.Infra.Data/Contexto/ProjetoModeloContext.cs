@@ -18,7 +18,9 @@ namespace ProjetoModeloDDD.Infra.Data.Contexto
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Pais>    Paises   { get; set; }
-
+        public DbSet<Pessoa>  Pessoas  { get; set; }
+        public DbSet<Cargo>   Cargos   { get; set; }
+        public DbSet<Lei>     Leis     { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -52,8 +54,22 @@ namespace ProjetoModeloDDD.Infra.Data.Contexto
                 if (entry.State == EntityState.Modified)
                 {
                     entry.Property("DataCriacao").IsModified = false;
+                }                
+            }
+
+            foreach (var entry in ChangeTracker.Entries().Where(entry => entry.Entity.GetType().GetProperty("DataAlteracao") != null))
+            {
+                if (entry.State == EntityState.Added)
+                {
+                    entry.Property("DataAlteracao").IsModified = false;
+                }
+
+                if (entry.State == EntityState.Modified)
+                {
+                    entry.Property("DataAlteracao").CurrentValue = DateTime.Now;
                 }
             }
+
             return base.SaveChanges();
         }
     }

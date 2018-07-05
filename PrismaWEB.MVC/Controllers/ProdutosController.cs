@@ -11,7 +11,7 @@ namespace ProjetoModeloDDD.MVC.Controllers
     {
         // GET: Produtos
         private readonly IProdutoAppService _produtoApp;
-        private readonly IClienteAppService _clienteApp;
+        private readonly IClienteAppService _clienteApp;        
 
         public ProdutosController(IProdutoAppService produtoApp, IClienteAppService clienteApp)
         {
@@ -38,8 +38,8 @@ namespace ProjetoModeloDDD.MVC.Controllers
 
         // GET: Cliente/Create
         public ActionResult Create()
-        {
-            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "ClienteId", "Nome");
+        {            
+            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "ClienteId", "Nome");            
             return View();
         }
 
