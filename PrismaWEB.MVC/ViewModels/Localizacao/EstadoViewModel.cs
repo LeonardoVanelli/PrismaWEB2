@@ -19,8 +19,8 @@ namespace ProjetoModeloDDD.MVC.ViewModels
         public string Uf { get; set; }
 
         [Required]
-        public int Pais { get; set; }
-        public virtual PaisViewModel Paises { get; set; }
+        public int Pais_Id { get; set; }
+        public virtual PaisViewModel Pais { get; set; }
     }
 }
 
