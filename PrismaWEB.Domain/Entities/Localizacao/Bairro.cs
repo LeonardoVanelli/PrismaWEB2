@@ -16,15 +16,17 @@ namespace ProjetoModeloDDD.Domain.Entities
 
         [Required]
         public int Cidade_Id { get; set; }
+        [ForeignKey("Cidade_Id")]
+        public virtual Cidade Cidade { get; set; }
 
         [Required]
         public int Estado_Id { get; set; }
+        [ForeignKey("Estado_Id")]
+        public virtual Estado Estado { get; set; }
 
         [Required]
         public int Pais_Id { get; set; }
-
-        public virtual Cidade Cidade { get; set; }
-        public virtual Estado Estado { get; set; }
+        [ForeignKey("Pais_Id")]
         public virtual Pais Pais { get; set; }
     }
 }
