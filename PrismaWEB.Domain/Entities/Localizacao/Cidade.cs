@@ -15,6 +15,10 @@ namespace ProjetoModeloDDD.Domain.Entities
 
         public int Estado_Id { get; set; }
         [ForeignKey("Estado_Id")]
-        public virtual Estado Estado { get; set; }                
+        public virtual Estado Estado { get; set; }
+                
+        public int Pais_Id { get; set; }
+        [ForeignKey("Pais_Id")]
+        public virtual Pais Pais { get; set; }
     }
 }
