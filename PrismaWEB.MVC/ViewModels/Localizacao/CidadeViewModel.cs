@@ -20,7 +20,7 @@ namespace ProjetoModeloDDD.MVC.ViewModels
         [Required]
 
         [Display(Name = "País")]
-        public int PaisId { get; set; }
+        public int Pais_Id { get; set; }
 
         public virtual EstadoViewModel Estado { get; set; }
         public virtual PaisViewModel Pais { get; set; }
