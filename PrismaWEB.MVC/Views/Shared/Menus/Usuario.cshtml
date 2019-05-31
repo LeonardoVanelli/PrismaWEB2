@@ -16,7 +16,7 @@
         <a class="nav-link dropdown-item" style="color:black" href="~/Configuracoes">
             <i class="fa fa-fw fas fa-cog"></i>Configurações
         </a>
-        <a class="nav-link dropdown-item" style="color:black">
+        <a class="nav-link dropdown-item" style="color:black" href="@Url.Action("Edit", "Usuarios", new { id = (Session["usuarioLogado"] as SCadastroUsuarioLogadoViewModel).Pessoa_Id })">
             <i class="fa fa-fw fas fa-user"></i>Perfil
         </a>
         <a class="nav-link dropdown-item" style="color:black" href="~/SCadastros/AlterarSenha">
