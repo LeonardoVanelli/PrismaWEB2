@@ -6,6 +6,7 @@ using ProjetoModeloDDD.Application.Interface;
 using ProjetoModeloDDD.Domain.Entities;
 using ProjetoModeloDDD.MVC.Atributos;
 using ProjetoModeloDDD.MVC.ViewModels;
+using ProjetoModeloDDD.MVC.ViewModels.Sistema;
 
 namespace ProjetoModeloDDD.MVC.Controllers
 {
@@ -35,12 +36,13 @@ namespace ProjetoModeloDDD.MVC.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult AlterarSenha(SCadastroViewModel cadastrovm)
         {
             if (Session["usuarioLogado"] != null)
             {
-                cadastrovm.Pessoa_Id = (Session["usuarioLogado"] as SCadastro).Pessoa_Id;
-                cadastrovm.Login = (Session["usuarioLogado"] as SCadastro).Login;
+                cadastrovm.Pessoa_Id = (Session["usuarioLogado"] as SCadastroUsuarioLogadoViewModel).Pessoa_Id;
+                cadastrovm.Login = (Session["usuarioLogado"] as SCadastroUsuarioLogadoViewModel).Login;
             }
 
             try

@@ -10,7 +10,7 @@ namespace ProjetoModeloDDD.MVC.Controllers
     public class SPessoasPapeisController : Controller
     {
         private readonly ISPessoasPapeisAppService _spessoaspapeisApp;
-        private readonly ISPapelAppService _spapelApp;        
+        private readonly ISPapelAppService _spapelApp;
 
         public SPessoasPapeisController(ISPessoasPapeisAppService spessoaspapeisApp, ISPapelAppService spapelApp)
         {
@@ -55,7 +55,6 @@ namespace ProjetoModeloDDD.MVC.Controllers
             return View(spessoaspapeis);
         }
 
-        [HttpGet]
         public PartialViewResult IndexUsuario(int idUsuario)
         {
             var pessoaspapeisViewModel = Mapper.Map<IEnumerable<SPessoasPapeis>, IEnumerable<SPessoasPapeisViewModel>>(_spessoaspapeisApp.BuscarPorPessoa(idUsuario));
